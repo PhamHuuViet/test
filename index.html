@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Login</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="noi-dung">
+        <div class="form">
+            <h2>Trang Đăng Nhập</h2>
+            <form action="">
+                <div class="input-form">
+                    <span>Tên Người Dùng</span>
+                    <input type="text" name="">
+                </div>
+                <div class="input-form">
+                    <div class="matkhau">
+                    <span>Mật Khẩu</span> 
+                    <input type="password" value="" id="myInput"><br><br>
+                    <input type="checkbox" onclick="myFunction()">Hiện mật khẩu
+                    <script>
+                        function myFunction() {
+                          var x = document.getElementById("myInput");
+                            if (x.type === "password") {
+                                x.type = "text";
+                            } else {
+                                x.type = "password";
+                            }
+                            }
+                    </script>
+                    </div>
+                </div>
+                <div class="input-form">
+                    <input type="submit" value="Đăng Nhập">
+                </div>
+                <div class="input-form ">
+                    <p>Bạn Chưa Có Tài Khoản? <a href="#">Đăng Ký</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
